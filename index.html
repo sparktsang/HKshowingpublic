@@ -35,6 +35,19 @@
                     const workbook = XLSX.read(data, { type: 'array' });
                     const sheetName = workbook.SheetNames[0];
                     const worksheet = workbook.Sheets[sheetName];
+
+                    // 過濾掉隱藏的列
+                    const range = XLSX.utils.decode_range(worksheet['!ref']);
+                    for (let C = range.s.c; C <= range.e.c; ++C) {
+                        const address = XLSX.utils.encode_col(C) + "1";
+                        if (worksheet[address] && worksheet[address].hidden) {
+                            for (let R = range.s.r; R <= range.e.r; ++R) {
+                                const cell_address = XLSX.utils.encode_cell({ r: R, c: C });
+                                delete worksheet[cell_address];
+                            }
+                        }
+                    }
+
                     const htmlString = XLSX.utils.sheet_to_html(worksheet, { id: 'excelTable' });
                     document.getElementById('excelTable').outerHTML = htmlString;
                 })
