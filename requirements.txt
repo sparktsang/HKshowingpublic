@@ -1,8 +1,0 @@
-cloudscraper
-pandas
-numpy
-requests
-beautifulsoup4
-selenium
-unidecode
-xlsxwriter
