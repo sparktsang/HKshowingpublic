@@ -5,6 +5,9 @@ on:
     - cron: "0 22 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write  # Grant write permissions to the contents
+
 jobs:
   update-manifest:
     runs-on: ubuntu-latest
@@ -27,7 +30,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m 'Update manifest'
+          git commit -m 'Update manifest' || echo "No changes to commit"
 
       - name: Push changes
         run: git push
