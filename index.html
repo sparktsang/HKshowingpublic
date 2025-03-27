@@ -32,40 +32,28 @@
             const repoOwner = 'sparktsang';
             const repoName = 'HKshowingpublic';
             const branchName = 'gh-pages';
-            const directoryPath = ''; // 修改為存放Excel文件的具體目錄
 
-            // Fetch the list of files from the GitHub repository
-            fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${directoryPath}?ref=${branchName}`)
+            // Fetch the manifest.json file
+            fetch(`https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/manifest.json`)
                 .then(response => response.json())
                 .then(data => {
-                    // Filter for Excel files and sort by date in descending order
-                    const excelFiles = data.filter(file => file.name.endsWith('.xlsx')).sort((a, b) => {
-                        const dateA = new Date(a.name.match(/\d{4}-\d{2}-\d{2}/)[0]);
-                        const dateB = new Date(b.name.match(/\d{4}-\d{2}-\d{2}/)[0]);
-                        return dateB - dateA;
-                    });
-                    
-                    if (excelFiles.length > 0) {
-                        const latestFile = excelFiles[0];
-                        const updateDate = latestFile.name.match(/\d{4}-\d{2}-\d{2}/)[0];
-                        document.getElementById('updateDate').textContent = `${updateDate} (最近更新)`;
+                    const latestFileName = data.latest;
+                    const updateDate = latestFileName.match(/\d{4}-\d{2}-\d{2}/)[0];
+                    document.getElementById('updateDate').textContent = `${updateDate} (最近更新)`;
 
-                        // Fetch the latest Excel file
-                        fetch(latestFile.download_url)
-                            .then(response => response.arrayBuffer())
-                            .then(data => {
-                                const workbook = XLSX.read(data, { type: 'array' });
-                                const sheetName = workbook.SheetNames[0];
-                                const worksheet = workbook.Sheets[sheetName];
-                                const htmlString = XLSX.utils.sheet_to_html(worksheet, { id: 'excelTable' });
-                                document.getElementById('excelTable').outerHTML = htmlString;
-                            })
-                            .catch(error => console.error(error));
-                    } else {
-                        console.error('No Excel files found in the repository.');
-                    }
+                    // Fetch the latest Excel file
+                    fetch(`https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/${latestFileName}`)
+                        .then(response => response.arrayBuffer())
+                        .then(data => {
+                            const workbook = XLSX.read(data, { type: 'array' });
+                            const sheetName = workbook.SheetNames[0];
+                            const worksheet = workbook.Sheets[sheetName];
+                            const htmlString = XLSX.utils.sheet_to_html(worksheet, { id: 'excelTable' });
+                            document.getElementById('excelTable').outerHTML = htmlString;
+                        })
+                        .catch(error => console.error(error));
                 })
-                .catch(error => console.error('Error fetching the file list from GitHub:', error));
+                .catch(error => console.error('Error fetching the manifest.json from GitHub:', error));
         });
     </script>
 
