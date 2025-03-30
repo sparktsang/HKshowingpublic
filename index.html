@@ -24,11 +24,12 @@
             margin: 2rem auto;
             padding: 1rem;
         }
-        p { 
-        	text-align: center; 
-            font-size: 1rem;
-            margin-left: 1.6rem;
-            margin-right: 1.6rem;
+        p { font-size: 16px; }
+        .subheader { 
+        	text-align: center;
+        	font-size: 18px; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
         }
         .update-info {
             text-align: center;
@@ -63,14 +64,19 @@
             font-size: 1.5rem;
             margin: 2rem 0;
         }
+      	.note { text-align: center; font-style: italic; color: #666; margin-top: 10px; }
+      	.content { max-width: 800px; margin: 40px auto; text-align: left; line-height: 1.6; }
+        .faq { margin-top: 30px; }
+        .faq h3 { margin-top: 20px; color: #444; }
+        .donation { text-align: center; font-size: 18px; font-weight: bold; margin-top: 30px; }
+        .donation a { color: #007bff; text-decoration: none; }
     </style>
 </head>
 <body>
     <header>
         <h1>香港即日上映電影數據 - 每日更新</h1>
     </header>
-  	<p>以下係最新嘅香港上映電影列表及其爛蕃茄數據，每日清晨自動更新一次。</p>
-    <p>各人揀睇咩戲，都有自己方式。而我呢，就係睇爛蕃茄影評人分數Tomatometer。呢個分數代表一堆專業影評人，畀一部戲正評嘅比例。唔好誤會，佢唔可以準確咁評一部戲有幾好㗎！但佢可以防伏：越大比例嘅專業影評人正評，同埋越多影評人參與嗰個評分，伏嘅機會越低。當然要結合自己對劇情同類型嘅偏好。但防伏率確實好高！可以睇埋Audience Score一併參考，觀眾評價數目仲可以睇得出部戲有幾熱門添！</p>
+    <p class="subheader">以下係最新嘅香港上映電影列表及其爛蕃茄數據，每日清晨自動更新一次。</p>
 
     <main>
         <div class="update-info" id="updateDate">加載中...</div>
@@ -113,8 +119,44 @@
                 });
         });
     </script>
-    <p>註：不包括放映戲院及場次過少、及爛蕃茄數據不完整的電影。「上映日期」代表幾時喺香港上畫。數據力求準確，但無法就不準負責。感謝參考！</p>
-    <p>假如幫你揀到部好電影想答謝我，不妨獎我一杯咖啡！以下係Payme link，非常感謝！</p>
-    <p><a href="https://payme.hsbc/sparktsang">https://payme.hsbc/sparktsang</a></p>
+    <p class="note">註：不包括放映戲院及場次過少、及爛蕃茄數據不完整的電影。「上映日期」代表幾時喺香港上畫。</p>
+    <p class="note">數據力求準確，但無法就不準負責。感謝參考！</p>
+
+    <div class="content">
+        <h2 align="center">【說明】</h2>
+        <p align="left">在戲院選擇電影，經常因不知哪部是好電影而煩惱。</p>
+        <p>對此問題，本表也許就是數據驅動的完美解決方案。</p>
+        <p>本表為香港即日上映中的主要電影，加上爛蕃茄評分數據，並由高至低排名，好電影一目了然。</p>
+        
+        <div class="faq">
+            <h2 align="center">【問答集】</h2>
+            <h3>問：甚麼是Tomatometer爛蕃茄影評人分數？</h3>
+            <p>答：那是目前最權威的電影評分系統，獲認證的影評人才能參與這個評分，這評分代表多少百分比的專業影評人認為該部電影是好電影。</p>
+            
+            <h3>問：為何不用IMDb就好？</h3>
+            <p>答：IMDb評分是一種觀眾評分，爛蕃茄網站中也有類似的audience score。這種評分人人也能參與，與爛蕃茄影評人分數不可相提並論。</p>
+            
+            <h3>問：若專業影評人的基數低，那個爛蕃茄評分豈不是沒有意義了嗎？</h3>
+            <p>答：沒錯！這就是為何即使你在網站取得爛蕃茄評分，也不一定應盡然參考。本表列出了每部電影的影評人分數有多少影評人參與，提供全面參考。</p>
+            
+            <h3>問：即使影評人都說好，可也不見得我一定覺得好吧？</h3>
+            <p>答：沒錯！電影的好壞是主觀的，可是若一部電影的爛蕃茄評分為100，這代表有99.5%以上的影評人都認為是好電影。雖然仍有可能你會覺得爛，但是因為有那些影評人的篩選，大大降低了你覺得是爛片的機率。因此，評分未必確實反映好壞，但確實可以防伏。這跟食評分數也是同一道理！</p>
+            
+            <h3>問：雖然影評人分數有參考價值，但是我只喜歡看特定種類電影，那又如何？</h3>
+            <p>答：本表列出電影類別，你同樣可以只看特定類別的電影中的高評分者，而該些電影也已經被專業影評人予以優評，相當於已有許多專人為你試看過了！</p>
+            
+            <h3>問：既然如此，為何還列出audience score？</h3>
+            <p>答：觀眾評分可能跟專業影評人有落差，這反映的電影現象值得探究。同時，觀眾評價數目也或多或少反映該電影在西方世界的熱門程度，也可一併參考。</p>
+            
+            <h3>問：是甚麼驅使你製作及公開此表？</h3>
+            <p>答：原先為解決自己逐一查看電影資訊的麻煩，自行編寫程式製作表格解決問題。後來發現對熱愛電影的親友也有用，於是定期將檔案分享。但這樣還是需要定期運行程式和發檔案，因緣際會下得悉可以於GitHub全雲端運行程式，而且能展示成果，於是製作了此一頁面。</p>
+            
+          	<h3>問：全自動化製作此表是否十分容易？</h3>
+            <p>答：不能說是極為容易，主要挑戰在於需要令程式能百分百核對不同電影網站的電影資料，確保是同一電影。各網站的資料庫未必能無縫銜接，電影名稱可以相撞，年份資訊可以不全，導演名稱可以各有版本，連演員名單也可以出錯。要自動程式以純然邏輯的方式辨認電影，除了程式設計之外，還要稍為think out of the box。</p>
+        </div>
+    </div>
+    
+    <p class="donation">假如幫你揀到部好電影想答謝我，不妨獎我一杯咖啡！以下係Payme link，非常感謝！<br>
+    <a href="https://payme.hsbc/sparktsang">https://payme.hsbc/sparktsang</a></p>
 </body>
 </html>
