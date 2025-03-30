@@ -92,7 +92,6 @@
         <div class="update-info" id="updateDate">加載中...</div>
 
         <div class="table-container" id="tableContainer">
-            <p class="loading" id="loading">正在載入數據...</p>
             <table id="excelTable" style="display: none;"></table>
         </div>
     </main>
@@ -103,6 +102,7 @@
             const repoName = 'HKshowingpublic';
             const branchName = 'gh-pages';
 
+            // Fetch the manifest.json file
             fetch(`https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/manifest.json`)
                 .then(response => response.json())
                 .then(data => {
@@ -110,24 +110,57 @@
                     const updateDate = latestFileName.match(/\d{4}-\d{2}-\d{2}/)[0];
                     document.getElementById('updateDate').textContent = `${updateDate} (最近更新)`;
 
-                    return fetch(`https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/${latestFileName}`);
-                })
-                .then(response => response.arrayBuffer())
-                .then(data => {
-                    const workbook = XLSX.read(data, { type: 'array' });
-                    const sheetName = workbook.SheetNames[0];
-                    const worksheet = workbook.Sheets[sheetName];
-                    const htmlString = XLSX.utils.sheet_to_html(worksheet, { id: 'excelTable' });
+                    // Fetch the latest Excel file
+                    fetch(`https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/${latestFileName}`)
+                        .then(response => response.arrayBuffer())
+                        .then(data => {
+                            const workbook = XLSX.read(data, { type: 'array', cellLinks: true });
+                            const sheetName = workbook.SheetNames[0];
+                            const worksheet = workbook.Sheets[sheetName];
 
-                    document.getElementById('excelTable').outerHTML = htmlString;
-                    document.getElementById('loading').style.display = 'none';
-                    document.getElementById('excelTable').style.display = 'table';
+                            // 生成包含超連結的表格
+                            document.getElementById('excelTable').outerHTML = "<table id='excelTable'>" + generateTableWithLinks(worksheet) + "</table>";
+
+                        })
+                        .catch(error => console.error(error));
                 })
-                .catch(error => {
-                    console.error('Error loading data:', error);
-                    document.getElementById('loading').textContent = '數據載入失敗，請稍後再試。';
-                });
+                .catch(error => console.error('Error fetching the manifest.json from GitHub:', error));
         });
+
+        // 生成 HTML 表格並保留超連結
+        function generateTableWithLinks(sheet) {
+            const range = XLSX.utils.decode_range(sheet['!ref']);
+            let html = "<thead><tr>";
+
+            // 生成表頭
+            for (let col = range.s.c; col <= range.e.c; col++) {
+                const headerCell = sheet[XLSX.utils.encode_cell({ r: range.s.r, c: col })];
+                html += `<th>${headerCell ? XLSX.utils.format_cell(headerCell) : ''}</th>`;
+            }
+            html += "</tr></thead><tbody>";
+
+            // 生成表格內容
+            for (let row = range.s.r + 1; row <= range.e.r; row++) {
+                html += "<tr>";
+                for (let col = range.s.c; col <= range.e.c; col++) {
+                    const cellAddress = XLSX.utils.encode_cell({ r: row, c: col });
+                    const cell = sheet[cellAddress];
+                    let cellContent = cell ? XLSX.utils.format_cell(cell) : '';
+
+                    // 處理 Excel 超連結
+                    if (cell && cell.l && cell.l.Target) {
+                        cellContent = `<a href="${cell.l.Target}" target="_blank">${cellContent}</a>`;
+                    }
+
+                    html += `<td>${cellContent}</td>`;
+                }
+                html += "</tr>";
+            }
+
+            html += "</tbody>";
+            return html;
+        }
+
     </script>
     <p class="note">註：不包括放映戲院及場次過少、及爛蕃茄數據不完整的電影。「上映日期」代表幾時喺香港上畫。</p>
     <p class="note">數據力求準確，但無法就不準負責。感謝參考！</p>
