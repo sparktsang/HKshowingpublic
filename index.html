@@ -42,6 +42,12 @@
             font-weight: bold; 
             margin-bottom: 20px; 
         }
+      	@media only screen and (max-width: 860px) {
+          .subheader {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
         .update-info {
             text-align: center;
             font-size: 1.6rem;
@@ -77,6 +83,12 @@
         }
       	.note { text-align: center; font-style: italic; color: #666; margin-top: 10px; }
       	.content { max-width: 800px; margin: 40px auto; text-align: left; line-height: 1.6; }
+      	@media only screen and (max-width: 860px) {
+          .content {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
         .faq { margin-top: 30px; }
         .faq h3 { margin-top: 20px; color: #444; }
         .donation { text-align: center; font-size: 18px; font-weight: bold; margin-top: 30px; }
@@ -163,10 +175,11 @@
         }
 
     </script>
-    
-    <p class="note">註：不包括放映戲院及場次過少、及爛蕃茄數據不完整的電影。「上映日期」代表幾時喺香港上畫。</p>
-    <p class="note">中文電影名稱連結至hkmovie6網站頁面，可瀏覽該電影詳情及場次。Tomatometer分數連結至該電影爛蕃茄網站頁面。</p>
-    <p class="note">數據力求準確，但無法就不準負責。感謝參考！</p><br>
+  	<div class="content">
+      <p class="note">註：不包括放映戲院及場次過少、及爛蕃茄數據不完整的電影。「上映日期」代表幾時喺香港上畫。</p>
+      <p class="note">中文電影名稱連結至hkmovie6網站頁面，可瀏覽該電影詳情及場次。Tomatometer分數連結至該電影爛蕃茄網站頁面。</p>
+      <p class="note">數據力求準確，但無法就不準負責。感謝參考！</p>
+    </div>
 	<hr>
     <div class="content">
         <h2 align="center">【說明】</h2>
@@ -202,7 +215,9 @@
         </div>
     </div>
     <hr>
-    <p class="donation">假如幫你揀到部好電影想答謝我，不妨獎我一杯咖啡！以下係Payme link，非常感謝！<br>
-    <a href="https://payme.hsbc/sparktsang">https://payme.hsbc/sparktsang</a></p>
+    <div class="content">
+      <p class="donation">假如幫你揀到部好電影想答謝我，不妨獎我一杯咖啡！以下係Payme link，非常感謝！<br>
+      <a href="https://payme.hsbc/sparktsang">https://payme.hsbc/sparktsang</a></p>
+    </div>
 </body>
 </html>
