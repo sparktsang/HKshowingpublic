@@ -13,6 +13,20 @@
         ],
         "Fala Chen"
     ],
+    "MINECRAFT\uff1a\u6211\u7684\u4e16\u754c\u5927\u96fb\u5f71": [
+        "A Minecraft Movie",
+        "\u82f1\u8a9e\u3001\u7cb5\u8a9e",
+        "2025\u5e744\u67083\u65e5",
+        [
+            "Jennifer Coolidge",
+            "Jack Black",
+            "Emma Myers",
+            "Danielle Brittany Brooks",
+            "Jason Momoa",
+            "Sebastian Eugene Hansen"
+        ],
+        "Jared Hess"
+    ],
     "\u54ea\u5412\u4e4b\u9b54\u7ae5\u9b27\u6d77": [
         "Ne Zha 2",
         "\u666e\u901a\u8a71",
@@ -34,20 +48,6 @@
             "Ikki SAWAMURA"
         ],
         "Ayuko Tsukahara"
-    ],
-    "MINECRAFT\uff1a\u6211\u7684\u4e16\u754c\u5927\u96fb\u5f71": [
-        "A Minecraft Movie",
-        "\u82f1\u8a9e\u3001\u7cb5\u8a9e",
-        "2025\u5e744\u67083\u65e5",
-        [
-            "Jennifer Coolidge",
-            "Jack Black",
-            "Emma Myers",
-            "Danielle Brittany Brooks",
-            "Jason Momoa",
-            "Sebastian Eugene Hansen"
-        ],
-        "Jared Hess"
     ],
     "\u767d\u96ea\u516c\u4e3b": [
         "Snow White",
@@ -73,6 +73,13 @@
         ],
         "Ayuko Tsukahara"
     ],
+    "\u5287\u5834\u7248 \u4e16\u754c\u8a08\u756b \u5d29\u58de\u7684\u4e16\u754c\u8207\u7121\u6cd5\u6b4c\u5531\u7684\u521d\u97f3\u672a\u4f86": [
+        "COLORFUL STAGE! The Movie: A Miku Who Can't Sing",
+        "\u65e5\u8a9e",
+        "2025\u5e744\u67083\u65e5",
+        [],
+        "Hiroyuki Hata"
+    ],
     "\u7c73\u594717\u865f": [
         "Mickey 17",
         "\u82f1\u8a9e",
@@ -85,6 +92,13 @@
             "Mark Ruffalo"
         ],
         "Bong Joon-ho"
+    ],
+    "SEVENTEEN [RIGHT HERE] WORLD TOUR IN CINEMAS (2025)": [
+        "SEVENTEEN [RIGHT HERE] WORLD TOUR IN CINEMAS (2025)",
+        "\u97d3\u8a9e",
+        "2025\u5e744\u67082\u65e5",
+        null,
+        null
     ],
     "\u5b64\u7368\u7684\u7f8e\u98df\u5bb6": [
         "The Solitary Gourmet",
@@ -101,16 +115,6 @@
         ],
         "Yutaka Matsushige"
     ],
-    "\u9ad8\u7a7a\u6bba\u6a5f": [
-        "Flight Risk",
-        "\u82f1\u8a9e",
-        "2025\u5e743\u670820\u65e5",
-        [
-            "Michelle Dockery",
-            "Mark Wahlberg"
-        ],
-        "Mel Gibson"
-    ],
     "\u770b\u6211\u4eca\u5929\u600e\u9ebc\u8aaa": [
         "THE WAY WE TALK",
         "\u9999\u6e2f\u624b\u8a9e\u53ca\u7cb5\u8a9e",
@@ -121,19 +125,32 @@
         ],
         "Adam Wong"
     ],
-    "SEVENTEEN [RIGHT HERE] WORLD TOUR IN CINEMAS (2025)": [
-        "SEVENTEEN [RIGHT HERE] WORLD TOUR IN CINEMAS (2025)",
-        "\u97d3\u8a9e",
-        "2025\u5e744\u67082\u65e5",
-        null,
-        null
+    "\u9ad8\u7a7a\u6bba\u6a5f": [
+        "Flight Risk",
+        "\u82f1\u8a9e",
+        "2025\u5e743\u670820\u65e5",
+        [
+            "Michelle Dockery",
+            "Mark Wahlberg"
+        ],
+        "Mel Gibson"
     ],
-    "\u5287\u5834\u7248 \u4e16\u754c\u8a08\u756b \u5d29\u58de\u7684\u4e16\u754c\u8207\u7121\u6cd5\u6b4c\u5531\u7684\u521d\u97f3\u672a\u4f86": [
-        "COLORFUL STAGE! The Movie: A Miku Who Can't Sing",
-        "\u65e5\u8a9e",
-        "2025\u5e744\u67083\u65e5",
+    "\u8c93\u8c93\u7684\u5947\u5e7b\u6f02\u6d41": [
+        "Flow",
+        "\u4e0d\u8a2d\u5c0d\u767d",
+        "2025\u5e744\u67084\u65e5",
         [],
-        "Hiroyuki Hata"
+        "Gints Zilbalodis"
+    ],
+    "PUI PUI \u5929\u7afa\u9f20\u8eca\u8eca \u96fb\u5f71\u7248 MOLMAX": [
+        "Pui Pui Molcar the Movie: MOLMAX",
+        "\u65e5\u8a9e\u3001\u7cb5\u8a9e",
+        "2025\u5e744\u67083\u65e5",
+        [
+            "Akio Otsuka",
+            "Masaki Aiba"
+        ],
+        "Mankyu"
     ],
     "\u7334": [
         "The Monkey",
@@ -163,12 +180,17 @@
         ],
         "Naoko Yamada"
     ],
-    "\u8c93\u8c93\u7684\u5947\u5e7b\u6f02\u6d41": [
-        "Flow",
-        "\u4e0d\u8a2d\u5c0d\u767d",
-        "2025\u5e744\u67084\u65e5",
-        [],
-        "Gints Zilbalodis"
+    "\u9580\u9003": [
+        "HERETIC",
+        "\u82f1\u8a9e",
+        "2025\u5e743\u67086\u65e5",
+        [
+            "Scott Beck",
+            "Hugh Grant",
+            "Chloe East",
+            "Sophie Thatcher"
+        ],
+        "Bryan Woods"
     ],
     "\u6dfa\u6dfa\u6b72\u6708": [
         "True Love, for Once in My Life",
@@ -182,28 +204,6 @@
         ],
         "Siu Koon-ho"
     ],
-    "\u9580\u9003": [
-        "HERETIC",
-        "\u82f1\u8a9e",
-        "2025\u5e743\u67086\u65e5",
-        [
-            "Scott Beck",
-            "Hugh Grant",
-            "Chloe East",
-            "Sophie Thatcher"
-        ],
-        "Bryan Woods"
-    ],
-    "PUI PUI \u5929\u7afa\u9f20\u8eca\u8eca \u96fb\u5f71\u7248 MOLMAX": [
-        "Pui Pui Molcar the Movie: MOLMAX",
-        "\u65e5\u8a9e\u3001\u7cb5\u8a9e",
-        "2025\u5e744\u67083\u65e5",
-        [
-            "Akio Otsuka",
-            "Masaki Aiba"
-        ],
-        "Mankyu"
-    ],
     "\u9999\u6e2f\u56db\u5f91\u5927\u6b65\u8d70": [
         "Four Trails",
         "\u82f1\u8a9e",
@@ -213,6 +213,17 @@
             "Law Kai Pong"
         ],
         "Stone Tsang"
+    ],
+    "\u7c97\u7377\u6d3e\u5efa\u7bc9\u5e2b": [
+        "THE BRUTALIST",
+        "\u591a\u8a9e\u8a00",
+        "2025\u5e743\u67086\u65e5",
+        [
+            "Guy Pearce",
+            "Adrien Brody",
+            "Felicity Jones"
+        ],
+        "Brady Corbet"
     ],
     "\u7d05\u8c46": [
         "LITTLE RED SWEET",
@@ -228,17 +239,6 @@
             "Amy Lo"
         ],
         "Vincent Chow"
-    ],
-    "\u7c97\u7377\u6d3e\u5efa\u7bc9\u5e2b": [
-        "THE BRUTALIST",
-        "\u591a\u8a9e\u8a00",
-        "2025\u5e743\u67086\u65e5",
-        [
-            "Guy Pearce",
-            "Adrien Brody",
-            "Felicity Jones"
-        ],
-        "Brady Corbet"
     ],
     "\u7834\uff0e\u5730\u7344": [
         "The Last Dance",
@@ -277,6 +277,27 @@
         ],
         "Dan Berk"
     ],
+    "\u963f\u8afe\u62c9": [
+        "Anora",
+        "\u82f1\u8a9e",
+        "2024\u5e7410\u670831\u65e5",
+        [
+            "Mark Eidelstein",
+            "Mikey Madison"
+        ],
+        "Sean Baker"
+    ],
+    "\u72d7\u72d7\u6253\u5b98\u53f8": [
+        "Dog On Trial",
+        "\u6cd5\u8a9e",
+        "2025\u5e744\u67083\u65e5",
+        [
+            "Anne Dorval",
+            "Kodi Le Chien",
+            "Jean-Pascal Zadi"
+        ],
+        "Fran\u00e7ois Damiens"
+    ],
     "\u9a45\u9b54\u9ed1\u4fee\u5973": [
         "Dark Nuns",
         "\u97d3\u8a9e",
@@ -287,16 +308,6 @@
             "Jeon Yeo-been"
         ],
         "KWON HYEOK-JAE"
-    ],
-    "\u963f\u8afe\u62c9": [
-        "Anora",
-        "\u82f1\u8a9e",
-        "2024\u5e7410\u670831\u65e5",
-        [
-            "Mark Eidelstein",
-            "Mikey Madison"
-        ],
-        "Sean Baker"
     ],
     "\u7f8e\u570b\u968a\u95774\uff1a\u52c7\u6562\u65b0\u4e16\u754c": [
         "Captain America: Brave New World",
@@ -313,6 +324,17 @@
         ],
         "Julius Onah"
     ],
+    "\u6a5f\u52d5\u6230\u58ebGundam GQuuuuuuX -Beginning-": [
+        "Mobile Suit Gundam GQuuuuuuX -Beginning-",
+        "\u65e5\u8a9e",
+        "2025\u5e742\u670827\u65e5",
+        [
+            "Tomoyo Kurozawa",
+            "Yui Ishikawa",
+            "Shimba Tsuchiya"
+        ],
+        "Kazuya Tsurumaki"
+    ],
     "\u5287\u5834\u7248 \u300c\u9032\u64ca\u7684\u5de8\u4eba\u300d\u5b8c\u7d50\u7bc7THE LAST ATTACK": [
         "Attack on Titan: THE LAST ATTACK",
         "\u65e5\u8a9e",
@@ -327,16 +349,16 @@
         ],
         "Yuichiro Hayashi"
     ],
-    "\u6a5f\u52d5\u6230\u58ebGundam GQuuuuuuX -Beginning-": [
-        "Mobile Suit Gundam GQuuuuuuX -Beginning-",
-        "\u65e5\u8a9e",
-        "2025\u5e742\u670827\u65e5",
+    "\u5feb\u6a02\u5230\u6b7b(4K\u4fee\u5fa9\u7248)": [
+        "Happy End (4K Remastered)",
+        "\u97d3\u8a9e",
+        "2025\u5e744\u67083\u65e5",
         [
-            "Tomoyo Kurozawa",
-            "Yui Ishikawa",
-            "Shimba Tsuchiya"
+            "Jin-Mo Joo",
+            "Do-Yeon Chun",
+            "Min-Sik Choi"
         ],
-        "Kazuya Tsurumaki"
+        "Ji-Woo Jung"
     ],
     "\u5510\u63a21900": [
         "Detective Chinatown 1900",
@@ -372,16 +394,21 @@
         ],
         "Hideki Takeuchi"
     ],
-    "\u7f8e\u8072\u6b4c\u540e\uff1a\u746a\u9e97\u4e9e": [
-        "Maria",
-        "\u591a\u8a9e\u8a00",
-        "2025\u5e742\u670820\u65e5",
+    "BJ\u55ae\u8eab\u65e5\u8a18\uff1a\u6211\u70ba\u4ed4\u72c2": [
+        "Bridget Jones: Mad About the Boy",
+        "\u82f1\u8a9e",
+        "2025\u5e742\u670813\u65e5",
         [
-            "Angelina Jolie",
-            "Alba Rohrwacher",
-            "Pierfrancesco Favino"
+            "Renee Zellweger",
+            "Chiwetel Ejiofor",
+            "Leo Woodall",
+            "Jim Broadbent",
+            "Gemma Jones",
+            "ISLA FISHER",
+            "Colin Firth",
+            "Hugh Grant"
         ],
-        "Pablo Larra\u00edn"
+        "Michael Morris"
     ],
     "\u6559\u5b97\u9078\u6230": [
         "Conclave",
@@ -408,21 +435,28 @@
         ],
         "Lien Chien-Hung"
     ],
-    "BJ\u55ae\u8eab\u65e5\u8a18\uff1a\u6211\u70ba\u4ed4\u72c2": [
-        "Bridget Jones: Mad About the Boy",
-        "\u82f1\u8a9e",
-        "2025\u5e742\u670813\u65e5",
+    "\u7f8e\u8072\u6b4c\u540e\uff1a\u746a\u9e97\u4e9e": [
+        "Maria",
+        "\u591a\u8a9e\u8a00",
+        "2025\u5e742\u670820\u65e5",
         [
-            "Renee Zellweger",
-            "Chiwetel Ejiofor",
-            "Leo Woodall",
-            "Jim Broadbent",
-            "Gemma Jones",
-            "ISLA FISHER",
-            "Colin Firth",
-            "Hugh Grant"
+            "Angelina Jolie",
+            "Alba Rohrwacher",
+            "Pierfrancesco Favino"
         ],
-        "Michael Morris"
+        "Pablo Larra\u00edn"
+    ],
+    "\u7238\u7238": [
+        "PAPA",
+        "\u7cb5\u8a9e",
+        "2024\u5e7412\u67085\u65e5",
+        [
+            "Sean Lau",
+            "Jo Koo",
+            "Dylan So",
+            "Lainey Hung"
+        ],
+        "Philip Yung"
     ],
     "\u9752\u6625\u672b\u4e16\u7269\u8a9e": [
         "Happyend",
@@ -437,18 +471,6 @@
         ],
         "Neo Sora"
     ],
-    "\u7238\u7238": [
-        "PAPA",
-        "\u7cb5\u8a9e",
-        "2024\u5e7412\u67085\u65e5",
-        [
-            "Sean Lau",
-            "Jo Koo",
-            "Dylan So",
-            "Lainey Hung"
-        ],
-        "Philip Yung"
-    ],
     "\u6416\u6efe\u8a69\u4eba\uff1a\u672a\u77e5\u7684\u50b3\u5947": [
         "A Complete Unknown",
         "\u82f1\u8a9e",
@@ -460,6 +482,17 @@
             "Timoth\u00e9e Chalamet"
         ],
         "James Mangold"
+    ],
+    "\u829d\u52a0\u54e5": [
+        "Chicago",
+        "\u82f1\u8a9e",
+        "2024\u5e7410\u670826\u65e5",
+        [
+            "Richard Gere",
+            "Renee Zellweger",
+            "Catherine Zeta-Jones"
+        ],
+        "Rob Marshall"
     ],
     "\u8aa4\u5224": [
         "The Prosecutor",
@@ -484,47 +517,5 @@
             "Justin Cheung"
         ],
         "Julian Cheung"
-    ],
-    "\u829d\u52a0\u54e5": [
-        "Chicago",
-        "\u82f1\u8a9e",
-        "2024\u5e7410\u670826\u65e5",
-        [
-            "Richard Gere",
-            "Renee Zellweger",
-            "Catherine Zeta-Jones"
-        ],
-        "Rob Marshall"
-    ],
-    "\u5c01\u795e\u7b2c\u4e8c\u90e8\uff1a\u6230\u706b\u897f\u5c90": [
-        "Creation of The Gods II\uff1aDemon Force",
-        "\u666e\u901a\u8a71",
-        "2025\u5e741\u670829\u65e5",
-        [
-            "Huang Bo",
-            "Yosh Yu",
-            "Nashi",
-            "Luke Chen",
-            "Fei Xiang",
-            "Naran",
-            "Wu Hsing-kuo",
-            "Han Peng Yi",
-            "Ci Sha",
-            "Wu Yafan",
-            "Xia Yu",
-            "Senggerenqing",
-            "Ai Liku",
-            "Zhang Yi Long",
-            "Nayintai",
-            "Kuen Chen"
-        ],
-        "Wu Er Shan"
-    ],
-    "\u5357\u97d3\u6c11\u4e3b\u5bb6\u653f\u8ab2": [
-        "K-Family Affairs",
-        "\u97d3\u8a9e",
-        "2025\u5e741\u670816\u65e5",
-        [],
-        "Arum Nam"
     ]
 }
